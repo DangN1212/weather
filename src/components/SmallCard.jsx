@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function SmallCard({ dayTime, img, min, max, temp }) {
+export default function SmallCard({ dayTitle, img, min, max, temp }) {
     return (
         <div className="bg-darkblue py-4 px-5 flex flex-col items-center space-y-4">
-            <p>{dayTime}</p>
+            <p>{dayTitle}</p>
             <img
                 src={`/images/${img}.png`}
                 alt="weather-icon"
